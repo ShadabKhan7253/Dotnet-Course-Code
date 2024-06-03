@@ -1,0 +1,14 @@
+E:\DotNet\dotnet-course-code\DataStructure\bin\Debug\net8.0\DataStructure.exe
+E:\DotNet\dotnet-course-code\DataStructure\bin\Debug\net8.0\DataStructure.deps.json
+E:\DotNet\dotnet-course-code\DataStructure\bin\Debug\net8.0\DataStructure.runtimeconfig.json
+E:\DotNet\dotnet-course-code\DataStructure\bin\Debug\net8.0\DataStructure.dll
+E:\DotNet\dotnet-course-code\DataStructure\bin\Debug\net8.0\DataStructure.pdb
+E:\DotNet\dotnet-course-code\DataStructure\obj\Debug\net8.0\DataStructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\DotNet\dotnet-course-code\DataStructure\obj\Debug\net8.0\DataStructure.AssemblyInfoInputs.cache
+E:\DotNet\dotnet-course-code\DataStructure\obj\Debug\net8.0\DataStructure.AssemblyInfo.cs
+E:\DotNet\dotnet-course-code\DataStructure\obj\Debug\net8.0\DataStructure.csproj.CoreCompileInputs.cache
+E:\DotNet\dotnet-course-code\DataStructure\obj\Debug\net8.0\DataStructure.dll
+E:\DotNet\dotnet-course-code\DataStructure\obj\Debug\net8.0\refint\DataStructure.dll
+E:\DotNet\dotnet-course-code\DataStructure\obj\Debug\net8.0\DataStructure.pdb
+E:\DotNet\dotnet-course-code\DataStructure\obj\Debug\net8.0\DataStructure.genruntimeconfig.cache
+E:\DotNet\dotnet-course-code\DataStructure\obj\Debug\net8.0\ref\DataStructure.dll
