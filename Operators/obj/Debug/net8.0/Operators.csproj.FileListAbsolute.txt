@@ -1,0 +1,14 @@
+E:\DotNet\dotnet-course-code\Operators\bin\Debug\net8.0\Operators.exe
+E:\DotNet\dotnet-course-code\Operators\bin\Debug\net8.0\Operators.deps.json
+E:\DotNet\dotnet-course-code\Operators\bin\Debug\net8.0\Operators.runtimeconfig.json
+E:\DotNet\dotnet-course-code\Operators\bin\Debug\net8.0\Operators.dll
+E:\DotNet\dotnet-course-code\Operators\bin\Debug\net8.0\Operators.pdb
+E:\DotNet\dotnet-course-code\Operators\obj\Debug\net8.0\Operators.GeneratedMSBuildEditorConfig.editorconfig
+E:\DotNet\dotnet-course-code\Operators\obj\Debug\net8.0\Operators.AssemblyInfoInputs.cache
+E:\DotNet\dotnet-course-code\Operators\obj\Debug\net8.0\Operators.AssemblyInfo.cs
+E:\DotNet\dotnet-course-code\Operators\obj\Debug\net8.0\Operators.csproj.CoreCompileInputs.cache
+E:\DotNet\dotnet-course-code\Operators\obj\Debug\net8.0\Operators.dll
+E:\DotNet\dotnet-course-code\Operators\obj\Debug\net8.0\refint\Operators.dll
+E:\DotNet\dotnet-course-code\Operators\obj\Debug\net8.0\Operators.pdb
+E:\DotNet\dotnet-course-code\Operators\obj\Debug\net8.0\Operators.genruntimeconfig.cache
+E:\DotNet\dotnet-course-code\Operators\obj\Debug\net8.0\ref\Operators.dll
