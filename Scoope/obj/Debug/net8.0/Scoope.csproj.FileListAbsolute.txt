@@ -1,0 +1,15 @@
+E:\DotNet\dotnet-course-code\Scoope\obj\Debug\net8.0\Scoope.GeneratedMSBuildEditorConfig.editorconfig
+E:\DotNet\dotnet-course-code\Scoope\obj\Debug\net8.0\Scoope.AssemblyInfoInputs.cache
+E:\DotNet\dotnet-course-code\Scoope\obj\Debug\net8.0\Scoope.AssemblyInfo.cs
+E:\DotNet\dotnet-course-code\Scoope\obj\Debug\net8.0\Scoope.csproj.CoreCompileInputs.cache
+E:\DotNet\dotnet-course-code\Scoope\obj\Debug\net8.0\Scoope.sourcelink.json
+E:\DotNet\dotnet-course-code\Scoope\bin\Debug\net8.0\Scoope.exe
+E:\DotNet\dotnet-course-code\Scoope\bin\Debug\net8.0\Scoope.deps.json
+E:\DotNet\dotnet-course-code\Scoope\bin\Debug\net8.0\Scoope.runtimeconfig.json
+E:\DotNet\dotnet-course-code\Scoope\bin\Debug\net8.0\Scoope.dll
+E:\DotNet\dotnet-course-code\Scoope\bin\Debug\net8.0\Scoope.pdb
+E:\DotNet\dotnet-course-code\Scoope\obj\Debug\net8.0\Scoope.dll
+E:\DotNet\dotnet-course-code\Scoope\obj\Debug\net8.0\refint\Scoope.dll
+E:\DotNet\dotnet-course-code\Scoope\obj\Debug\net8.0\Scoope.pdb
+E:\DotNet\dotnet-course-code\Scoope\obj\Debug\net8.0\Scoope.genruntimeconfig.cache
+E:\DotNet\dotnet-course-code\Scoope\obj\Debug\net8.0\ref\Scoope.dll
