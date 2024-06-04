@@ -1,0 +1,15 @@
+E:\DotNet\dotnet-course-code\Namespace\bin\Debug\net8.0\Namespace.exe
+E:\DotNet\dotnet-course-code\Namespace\bin\Debug\net8.0\Namespace.deps.json
+E:\DotNet\dotnet-course-code\Namespace\bin\Debug\net8.0\Namespace.runtimeconfig.json
+E:\DotNet\dotnet-course-code\Namespace\bin\Debug\net8.0\Namespace.dll
+E:\DotNet\dotnet-course-code\Namespace\bin\Debug\net8.0\Namespace.pdb
+E:\DotNet\dotnet-course-code\Namespace\obj\Debug\net8.0\Namespace.GeneratedMSBuildEditorConfig.editorconfig
+E:\DotNet\dotnet-course-code\Namespace\obj\Debug\net8.0\Namespace.AssemblyInfoInputs.cache
+E:\DotNet\dotnet-course-code\Namespace\obj\Debug\net8.0\Namespace.AssemblyInfo.cs
+E:\DotNet\dotnet-course-code\Namespace\obj\Debug\net8.0\Namespace.csproj.CoreCompileInputs.cache
+E:\DotNet\dotnet-course-code\Namespace\obj\Debug\net8.0\Namespace.sourcelink.json
+E:\DotNet\dotnet-course-code\Namespace\obj\Debug\net8.0\Namespace.dll
+E:\DotNet\dotnet-course-code\Namespace\obj\Debug\net8.0\refint\Namespace.dll
+E:\DotNet\dotnet-course-code\Namespace\obj\Debug\net8.0\Namespace.pdb
+E:\DotNet\dotnet-course-code\Namespace\obj\Debug\net8.0\Namespace.genruntimeconfig.cache
+E:\DotNet\dotnet-course-code\Namespace\obj\Debug\net8.0\ref\Namespace.dll
