@@ -1,0 +1,15 @@
+E:\DotNet\dotnet-course-code\Modal\bin\Debug\net8.0\Modal.exe
+E:\DotNet\dotnet-course-code\Modal\bin\Debug\net8.0\Modal.deps.json
+E:\DotNet\dotnet-course-code\Modal\bin\Debug\net8.0\Modal.runtimeconfig.json
+E:\DotNet\dotnet-course-code\Modal\bin\Debug\net8.0\Modal.dll
+E:\DotNet\dotnet-course-code\Modal\bin\Debug\net8.0\Modal.pdb
+E:\DotNet\dotnet-course-code\Modal\obj\Debug\net8.0\Modal.GeneratedMSBuildEditorConfig.editorconfig
+E:\DotNet\dotnet-course-code\Modal\obj\Debug\net8.0\Modal.AssemblyInfoInputs.cache
+E:\DotNet\dotnet-course-code\Modal\obj\Debug\net8.0\Modal.AssemblyInfo.cs
+E:\DotNet\dotnet-course-code\Modal\obj\Debug\net8.0\Modal.csproj.CoreCompileInputs.cache
+E:\DotNet\dotnet-course-code\Modal\obj\Debug\net8.0\Modal.sourcelink.json
+E:\DotNet\dotnet-course-code\Modal\obj\Debug\net8.0\Modal.dll
+E:\DotNet\dotnet-course-code\Modal\obj\Debug\net8.0\refint\Modal.dll
+E:\DotNet\dotnet-course-code\Modal\obj\Debug\net8.0\Modal.pdb
+E:\DotNet\dotnet-course-code\Modal\obj\Debug\net8.0\Modal.genruntimeconfig.cache
+E:\DotNet\dotnet-course-code\Modal\obj\Debug\net8.0\ref\Modal.dll
