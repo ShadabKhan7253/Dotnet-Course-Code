@@ -1,4 +1,4 @@
-namespace HelloWorld.Models 
+namespace Database.Models 
 {
     public class Computer
     {

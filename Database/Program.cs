@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Numerics;
-using HelloWorld.Models;
+using Database.Models;
+using Database.Data;
 using Microsoft.Data.SqlClient;
 using Dapper;
 
@@ -15,13 +16,11 @@ namespace DataStructure
         static void Main(string[] args)
         {   
             
-            string connectionString = "Server=localhost;Database=DotNetCourseDatabase;TrustServerCertificate=true;Trusted_connection=true;";
-
-            IDbConnection dbConnection = new SqlConnection(connectionString);
+            DataContextDapper dapper = new DataContextDapper();
 
             string sqlCommand = "SELECT GETDATE()";
 
-            DateTime rightNow = dbConnection.QuerySingle<DateTime>(sqlCommand);
+            DateTime rightNow = dapper.LoadDataSingle<DateTime>(sqlCommand);
 
             Console.WriteLine(rightNow);
 
@@ -51,9 +50,9 @@ namespace DataStructure
              + "')";
 
              Console.WriteLine(sql);
-            //  int result = dbConnection.Execute(sql);
+             int result = dapper.ExecuteSqlWithRowCount(sql);
 
-            //  Console.WriteLine(result);
+             Console.WriteLine(result);
 
              string sqlSelect = @"
              SELECT 
@@ -65,7 +64,7 @@ namespace DataStructure
                 Computer.VideoCard
              FROM TutorialAppSchema.Computer";
 
-             IEnumerable<Computer> computers = dbConnection.Query<Computer>(sqlSelect);
+             IEnumerable<Computer> computers = dapper.LoadData<Computer>(sqlSelect);
 
              foreach(Computer singleComputer in computers) 
              {
