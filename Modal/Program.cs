@@ -7,7 +7,6 @@ namespace HelloWorld
     {
         // private string _motherboard;
         // public string Motherboard { get {return _motherboard;} set{_motherboard = value;} }
-        
         // behind the scene C# will automatically create the private field and use get to get the 
         // private field and set to set the private field so it automatically take care of in the 
         // background
