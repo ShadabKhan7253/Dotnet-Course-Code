@@ -1,10 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\DotNet\\dotnet-course-code\\",
+  "WorkspaceRootPath": "E:\\DotNet\\dotnet-course-code\\Database\\",
   "Documents": [
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\DotNet\\dotnet-course-code\\Database\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Database\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,12 +21,12 @@
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\DotNet\\dotnet-course-code\\Database\\Program.cs",
-              "RelativeDocumentMoniker": "Database\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "E:\\DotNet\\dotnet-course-code\\Database\\Program.cs*",
-              "RelativeToolTip": "Database\\Program.cs*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
+              "RelativeToolTip": "Program.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T18:12:48.878Z",
+              "WhenOpened": "2024-06-05T17:30:27.535Z",
               "EditorCaption": ""
             }
           ]
