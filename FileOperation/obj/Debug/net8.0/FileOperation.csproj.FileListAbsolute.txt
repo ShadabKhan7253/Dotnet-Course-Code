@@ -1,0 +1,15 @@
+E:\DotNet\dotnet-course-code\FileOperation\obj\Debug\net8.0\FileOperation.GeneratedMSBuildEditorConfig.editorconfig
+E:\DotNet\dotnet-course-code\FileOperation\obj\Debug\net8.0\FileOperation.AssemblyInfoInputs.cache
+E:\DotNet\dotnet-course-code\FileOperation\obj\Debug\net8.0\FileOperation.AssemblyInfo.cs
+E:\DotNet\dotnet-course-code\FileOperation\obj\Debug\net8.0\FileOperation.csproj.CoreCompileInputs.cache
+E:\DotNet\dotnet-course-code\FileOperation\obj\Debug\net8.0\FileOperation.sourcelink.json
+E:\DotNet\dotnet-course-code\FileOperation\bin\Debug\net8.0\FileOperation.exe
+E:\DotNet\dotnet-course-code\FileOperation\bin\Debug\net8.0\FileOperation.deps.json
+E:\DotNet\dotnet-course-code\FileOperation\bin\Debug\net8.0\FileOperation.runtimeconfig.json
+E:\DotNet\dotnet-course-code\FileOperation\bin\Debug\net8.0\FileOperation.dll
+E:\DotNet\dotnet-course-code\FileOperation\bin\Debug\net8.0\FileOperation.pdb
+E:\DotNet\dotnet-course-code\FileOperation\obj\Debug\net8.0\FileOperation.dll
+E:\DotNet\dotnet-course-code\FileOperation\obj\Debug\net8.0\refint\FileOperation.dll
+E:\DotNet\dotnet-course-code\FileOperation\obj\Debug\net8.0\FileOperation.pdb
+E:\DotNet\dotnet-course-code\FileOperation\obj\Debug\net8.0\FileOperation.genruntimeconfig.cache
+E:\DotNet\dotnet-course-code\FileOperation\obj\Debug\net8.0\ref\FileOperation.dll
