@@ -50,6 +50,14 @@
               "target": "Package",
               "version": "[2.1.35, )"
             },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "microsoft.data.sqlclient": {
               "target": "Package",
               "version": "[5.2.1, )"

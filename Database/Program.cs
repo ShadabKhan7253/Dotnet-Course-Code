@@ -1,11 +1,6 @@
-﻿﻿﻿using System;
-using System.Data;
-using System.Globalization;
-using System.Text.RegularExpressions;
-using Dapper;
+﻿﻿using System.Globalization;
 using Database.Data;
 using Database.Models;
-using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 
 namespace Database
@@ -14,8 +9,13 @@ namespace Database
     {
         static void Main(string[] args)
         {
-            DataContextDapper dapper = new DataContextDapper();
-            DataContextEF entityFramework = new DataContextEF();
+            // IConfiguration look for the ConnectionString in the json file we specify so it is importance 
+            // to spicifical name the key as ConnectionString
+            IConfiguration config = new ConfigurationBuilder()
+                .AddJsonFile("appsettings.json")
+                .Build(); // it will return the configuration
+            DataContextDapper dapper = new DataContextDapper(config);
+            DataContextEF entityFramework = new DataContextEF(config);
 
             DateTime rightNow = dapper.LoadDataSingle<DateTime>("SELECT GETDATE()");
 

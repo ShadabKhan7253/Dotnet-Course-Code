@@ -68,3 +68,10 @@ E:\DotNet\dotnet-course-code\Database\obj\Debug\net8.0\refint\Database.dll
 E:\DotNet\dotnet-course-code\Database\obj\Debug\net8.0\Database.pdb
 E:\DotNet\dotnet-course-code\Database\obj\Debug\net8.0\Database.genruntimeconfig.cache
 E:\DotNet\dotnet-course-code\Database\obj\Debug\net8.0\ref\Database.dll
+E:\DotNet\dotnet-course-code\Database\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+E:\DotNet\dotnet-course-code\Database\bin\Debug\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+E:\DotNet\dotnet-course-code\Database\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Json.dll
+E:\DotNet\dotnet-course-code\Database\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+E:\DotNet\dotnet-course-code\Database\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Physical.dll
+E:\DotNet\dotnet-course-code\Database\bin\Debug\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll
+E:\DotNet\dotnet-course-code\Database\bin\Debug\net8.0\appsettings.json
