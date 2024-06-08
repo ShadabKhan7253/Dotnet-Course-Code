@@ -1,15 +1,8 @@
-﻿using System;
-using System.Data;
-using System.Text.Json;
-using System.Text.RegularExpressions;
+﻿
 using AutoMapper;
-using Dapper;
 using ModelMapping.Data;
 using ModelMapping.Models;
-using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
 
 namespace ModelMapping
 {
@@ -25,7 +18,10 @@ namespace ModelMapping
 
             string computersJson = File.ReadAllText("ComputersSnake.json");
 
-            Mapper mapper = new Mapper(new MapperConfiguration((cfg) => {
+            /* Mapping Model using AutoMapper */
+            
+            Mapper mapper = new Mapper(new MapperConfiguration((cfg) =>
+            {
                 cfg.CreateMap<ComputerSnake, Computer>()
                     .ForMember(destination => destination.ComputerId, options =>
                         options.MapFrom(source => source.computer_id))
@@ -50,10 +46,23 @@ namespace ModelMapping
             if (computersSystem != null)
             {
                 IEnumerable<Computer> computerResult = mapper.Map<IEnumerable<Computer>>(computersSystem);
-                foreach (Computer computer in computerResult)
+                Console.WriteLine("Automapper Count: " + computerResult.Count());
+                /*foreach (Computer computer in computerResult)
                 {
                     Console.WriteLine(computer.Motherboard);
-                }
+                }*/
+            }
+
+            /* Mapping Model using Json Property Mapping */
+
+            IEnumerable<Computer>? computersJsonPropertyMapping = System.Text.Json.JsonSerializer.Deserialize<IEnumerable<Computer>>(computersJson);
+            if (computersJsonPropertyMapping != null)
+            {
+                Console.WriteLine("JSON Property Count: " + computersJsonPropertyMapping.Count());
+                /*foreach (Computer computer in computersJsonPropertyMapping)
+                {
+                     Console.WriteLine(computer.Motherboard);
+                }*/
             }
 
         } 

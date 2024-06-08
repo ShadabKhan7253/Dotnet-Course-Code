@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ModelMapping")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd7f6eecc4e88d2026c1c736cca4bdf5854e2311")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+495e93fd9c67c7513c118fd6a5fa70a9676982f6")]
 [assembly: System.Reflection.AssemblyProductAttribute("ModelMapping")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ModelMapping")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

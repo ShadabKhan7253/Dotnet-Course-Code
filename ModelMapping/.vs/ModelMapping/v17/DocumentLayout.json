@@ -7,6 +7,18 @@
       "RelativeMoniker": "D:0:0:{4630E407-49AA-429A-A304-9DB471D3999C}|ModelMapping.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{4630E407-49AA-429A-A304-9DB471D3999C}|ModelMapping.csproj|e:\\dotnet\\dotnet-course-code\\modelmapping\\models\\computer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4630E407-49AA-429A-A304-9DB471D3999C}|ModelMapping.csproj|solutionrelative:models\\computer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4630E407-49AA-429A-A304-9DB471D3999C}|ModelMapping.csproj|e:\\dotnet\\dotnet-course-code\\modelmapping\\data\\datacontextef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4630E407-49AA-429A-A304-9DB471D3999C}|ModelMapping.csproj|solutionrelative:data\\datacontextef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4630E407-49AA-429A-A304-9DB471D3999C}|ModelMapping.csproj|e:\\dotnet\\dotnet-course-code\\modelmapping\\data\\datacontextdapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4630E407-49AA-429A-A304-9DB471D3999C}|ModelMapping.csproj|solutionrelative:data\\datacontextdapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4630E407-49AA-429A-A304-9DB471D3999C}|ModelMapping.csproj|e:\\dotnet\\dotnet-course-code\\modelmapping\\models\\computersnake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4630E407-49AA-429A-A304-9DB471D3999C}|ModelMapping.csproj|solutionrelative:models\\computersnake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -18,11 +30,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataContextDapper.cs",
+              "DocumentMoniker": "E:\\DotNet\\dotnet-course-code\\ModelMapping\\Data\\DataContextDapper.cs",
+              "RelativeDocumentMoniker": "Data\\DataContextDapper.cs",
+              "ToolTip": "E:\\DotNet\\dotnet-course-code\\ModelMapping\\Data\\DataContextDapper.cs",
+              "RelativeToolTip": "Data\\DataContextDapper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T14:47:49.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Computer.cs",
+              "DocumentMoniker": "E:\\DotNet\\dotnet-course-code\\ModelMapping\\Models\\Computer.cs",
+              "RelativeDocumentMoniker": "Models\\Computer.cs",
+              "ToolTip": "E:\\DotNet\\dotnet-course-code\\ModelMapping\\Models\\Computer.cs",
+              "RelativeToolTip": "Models\\Computer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T14:34:54.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataContextEF.cs",
+              "DocumentMoniker": "E:\\DotNet\\dotnet-course-code\\ModelMapping\\Data\\DataContextEF.cs",
+              "RelativeDocumentMoniker": "Data\\DataContextEF.cs",
+              "ToolTip": "E:\\DotNet\\dotnet-course-code\\ModelMapping\\Data\\DataContextEF.cs",
+              "RelativeToolTip": "Data\\DataContextEF.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T14:34:50.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ComputerSnake.cs",
               "DocumentMoniker": "E:\\DotNet\\dotnet-course-code\\ModelMapping\\Models\\ComputerSnake.cs",
               "RelativeDocumentMoniker": "Models\\ComputerSnake.cs",
@@ -41,7 +92,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "E:\\DotNet\\dotnet-course-code\\ModelMapping\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAgwDcAAAARAAAA",
+              "ViewState": "AQIAADMAAAAAAAAAAAAgwEQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-08T09:34:54.483Z",
               "EditorCaption": ""
