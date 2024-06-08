@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\DotNet\\dotnet-course-code\\JSON\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BD10F109-345A-4058-AC46-A046BFF961C9}|JSON.csproj|e:\\dotnet\\dotnet-course-code\\json\\computers.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BD10F109-345A-4058-AC46-A046BFF961C9}|JSON.csproj|solutionrelative:computers.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD10F109-345A-4058-AC46-A046BFF961C9}|JSON.csproj|e:\\dotnet\\dotnet-course-code\\json\\computercopysystem.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{BD10F109-345A-4058-AC46-A046BFF961C9}|JSON.csproj|solutionrelative:computercopysystem.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD10F109-345A-4058-AC46-A046BFF961C9}|JSON.csproj|e:\\dotnet\\dotnet-course-code\\json\\computercopynewtonsoft.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{BD10F109-345A-4058-AC46-A046BFF961C9}|JSON.csproj|solutionrelative:computercopynewtonsoft.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD10F109-345A-4058-AC46-A046BFF961C9}|JSON.csproj|e:\\dotnet\\dotnet-course-code\\json\\data\\datacontextef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD10F109-345A-4058-AC46-A046BFF961C9}|JSON.csproj|solutionrelative:data\\datacontextef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD10F109-345A-4058-AC46-A046BFF961C9}|JSON.csproj|e:\\dotnet\\dotnet-course-code\\json\\data\\datacontextdapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD10F109-345A-4058-AC46-A046BFF961C9}|JSON.csproj|solutionrelative:data\\datacontextdapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD10F109-345A-4058-AC46-A046BFF961C9}|JSON.csproj|e:\\dotnet\\dotnet-course-code\\json\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BD10F109-345A-4058-AC46-A046BFF961C9}|JSON.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Computers.json",
+              "DocumentMoniker": "E:\\DotNet\\dotnet-course-code\\JSON\\Computers.json",
+              "RelativeDocumentMoniker": "Computers.json",
+              "ToolTip": "E:\\DotNet\\dotnet-course-code\\JSON\\Computers.json",
+              "RelativeToolTip": "Computers.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-08T06:20:00.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "computerCopySystem.txt",
+              "DocumentMoniker": "E:\\DotNet\\dotnet-course-code\\JSON\\computerCopySystem.txt",
+              "RelativeDocumentMoniker": "computerCopySystem.txt",
+              "ToolTip": "E:\\DotNet\\dotnet-course-code\\JSON\\computerCopySystem.txt",
+              "RelativeToolTip": "computerCopySystem.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAACWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-06-08T06:11:25.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "computerCopyNewtonsoft.txt",
+              "DocumentMoniker": "E:\\DotNet\\dotnet-course-code\\JSON\\computerCopyNewtonsoft.txt",
+              "RelativeDocumentMoniker": "computerCopyNewtonsoft.txt",
+              "ToolTip": "E:\\DotNet\\dotnet-course-code\\JSON\\computerCopyNewtonsoft.txt",
+              "RelativeToolTip": "computerCopyNewtonsoft.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-06-08T06:11:09.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\DotNet\\dotnet-course-code\\JSON\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "E:\\DotNet\\dotnet-course-code\\JSON\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-07T15:12:46.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataContextEF.cs",
+              "DocumentMoniker": "E:\\DotNet\\dotnet-course-code\\JSON\\Data\\DataContextEF.cs",
+              "RelativeDocumentMoniker": "Data\\DataContextEF.cs",
+              "ToolTip": "E:\\DotNet\\dotnet-course-code\\JSON\\Data\\DataContextEF.cs",
+              "RelativeToolTip": "Data\\DataContextEF.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwAQAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T15:05:45.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DataContextDapper.cs",
+              "DocumentMoniker": "E:\\DotNet\\dotnet-course-code\\JSON\\Data\\DataContextDapper.cs",
+              "RelativeDocumentMoniker": "Data\\DataContextDapper.cs",
+              "ToolTip": "E:\\DotNet\\dotnet-course-code\\JSON\\Data\\DataContextDapper.cs",
+              "RelativeToolTip": "Data\\DataContextDapper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T14:57:03.769Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
