@@ -2,6 +2,8 @@
 // to run. server will be listening to a request and will reponse to a request when it will recieve
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddControllers(); // it will endpoint to the controllers 
+
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 
@@ -22,33 +24,35 @@ if (app.Environment.IsDevelopment())
 }
 else 
 {
-    app.UseHttpsRedirection(); // in the production mode it will check the route for ssl certification
+    app.UseHttpsRedirection(); // in the production mode it will check the route for
 }
 
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+// var summaries = new[]
+// {
+//     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+// };
 
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast")
-.WithOpenApi();
+// app.MapGet("/weatherforecast", () =>
+// {
+//     var forecast =  Enumerable.Range(1, 5).Select(index =>
+//         new WeatherForecast
+//         (
+//             DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
+//             Random.Shared.Next(-20, 55),
+//             summaries[Random.Shared.Next(summaries.Length)]
+//         ))
+//         .ToArray();
+//     return forecast;
+// })
+// .WithName("GetWeatherForecast")
+// .WithOpenApi();
+
+app.MapControllers(); // it will have access to all the controller in our application and it will able to set the router for us 
 
 app.Run();
 
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
+// record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
+// {
+//     public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+// }
