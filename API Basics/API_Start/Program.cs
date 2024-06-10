@@ -46,7 +46,7 @@ if (app.Environment.IsDevelopment())
 }
 else 
 {
-    app.UseCors("ProdCors");
+    app.UseCors("DevCors");
     app.UseHttpsRedirection(); // in the production mode it will check the route for
 }
 
