@@ -1,0 +1,15 @@
+E:\DotNet\dotnet-course-code\AsyncAwait\bin\Debug\net8.0\AsyncAwait.exe
+E:\DotNet\dotnet-course-code\AsyncAwait\bin\Debug\net8.0\AsyncAwait.deps.json
+E:\DotNet\dotnet-course-code\AsyncAwait\bin\Debug\net8.0\AsyncAwait.runtimeconfig.json
+E:\DotNet\dotnet-course-code\AsyncAwait\bin\Debug\net8.0\AsyncAwait.dll
+E:\DotNet\dotnet-course-code\AsyncAwait\bin\Debug\net8.0\AsyncAwait.pdb
+E:\DotNet\dotnet-course-code\AsyncAwait\obj\Debug\net8.0\AsyncAwait.GeneratedMSBuildEditorConfig.editorconfig
+E:\DotNet\dotnet-course-code\AsyncAwait\obj\Debug\net8.0\AsyncAwait.AssemblyInfoInputs.cache
+E:\DotNet\dotnet-course-code\AsyncAwait\obj\Debug\net8.0\AsyncAwait.AssemblyInfo.cs
+E:\DotNet\dotnet-course-code\AsyncAwait\obj\Debug\net8.0\AsyncAwait.csproj.CoreCompileInputs.cache
+E:\DotNet\dotnet-course-code\AsyncAwait\obj\Debug\net8.0\AsyncAwait.sourcelink.json
+E:\DotNet\dotnet-course-code\AsyncAwait\obj\Debug\net8.0\AsyncAwait.dll
+E:\DotNet\dotnet-course-code\AsyncAwait\obj\Debug\net8.0\refint\AsyncAwait.dll
+E:\DotNet\dotnet-course-code\AsyncAwait\obj\Debug\net8.0\AsyncAwait.pdb
+E:\DotNet\dotnet-course-code\AsyncAwait\obj\Debug\net8.0\AsyncAwait.genruntimeconfig.cache
+E:\DotNet\dotnet-course-code\AsyncAwait\obj\Debug\net8.0\ref\AsyncAwait.dll
