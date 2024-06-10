@@ -1,0 +1,54 @@
+// this will actually going to build an api which is going to be a actual server that going
+// to run. server will be listening to a request and will reponse to a request when it will recieve
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
+
+/// it will try to map out all the endpoint in the application so that there are some method of 
+// discovering a different route that are avaiable
+builder.Services.AddEndpointsApiExplorer(); 
+builder.Services.AddSwaggerGen(); // it allow to run the swagger UI to explore the api for testing purposes
+
+// builder actual build the application 
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+else 
+{
+    app.UseHttpsRedirection(); // in the production mode it will check the route for ssl certification
+}
+
+
+var summaries = new[]
+{
+    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+};
+
+app.MapGet("/weatherforecast", () =>
+{
+    var forecast =  Enumerable.Range(1, 5).Select(index =>
+        new WeatherForecast
+        (
+            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
+            Random.Shared.Next(-20, 55),
+            summaries[Random.Shared.Next(summaries.Length)]
+        ))
+        .ToArray();
+    return forecast;
+})
+.WithName("GetWeatherForecast")
+.WithOpenApi();
+
+app.Run();
+
+record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
+{
+    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+}
