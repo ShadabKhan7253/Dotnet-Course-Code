@@ -71,5 +71,31 @@ public class UserController : ControllerBase
         throw new Exception("Failed to update user");
     }
 
-    
+    [HttpPost("AddUser")]
+    public IActionResult AddUser(User user)
+    {
+        string sql = @"
+            INSERT INTO TutorialAppSchema.Users
+            (
+               [FirstName],
+               [LastName],
+               [Email],
+               [Gender],
+               [Active]    
+            ) VALUES (
+                '" + user.FirstName +
+                "','" + user.LastName +
+                "','" + user.Email +
+                "','" + user.Gender +
+                "','" + user.Active + 
+                "')";
+            Console.WriteLine(sql);
+
+        if(_dapper.ExecuteSql(sql))
+        {
+            // OK() is a build in method which come from ControllerBase class which we have inherited
+            return Ok();
+        }
+        throw new Exception("Failed to add user");
+    }
 }
