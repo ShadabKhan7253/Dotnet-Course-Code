@@ -49,4 +49,27 @@ public class UserController : ControllerBase
         return user; 
     }
 
+    [HttpPut("EditUser")]
+
+    // IActionResult return a response that tell you what happen by return chank of data here we return that request is successful or failed
+    public IActionResult EditUser(User user)
+    {
+        string sql = @"
+            Update TutorialAppSchema.Users
+                SET [FirstName] = '" + user.FirstName +
+                "', [LastName] = '" + user.LastName +
+                "', [Email] = '" + user.Email +
+                "', [Gender] = '" + user.Gender +
+                "', [Active] = '" + user.Active +
+            "' WHERE UserId = " + user.UserId;
+
+        if(_dapper.ExecuteSql(sql))
+        {
+            // OK() is a build in method which come from ControllerBase class which we have inherited
+            return Ok();
+        }
+        throw new Exception("Failed to update user");
     }
+
+    
+}
