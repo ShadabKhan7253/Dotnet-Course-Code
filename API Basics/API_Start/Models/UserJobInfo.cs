@@ -1,4 +1,4 @@
-namespace API_Start
+namespace API_Start.Models
 {
     public partial class UserJobInfo
     {

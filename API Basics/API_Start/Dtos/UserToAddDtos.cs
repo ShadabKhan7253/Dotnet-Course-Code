@@ -1,4 +1,4 @@
-namespace API_Start
+namespace API_Start.Dtos
 {
     public partial class UserToAddDtos
     {
