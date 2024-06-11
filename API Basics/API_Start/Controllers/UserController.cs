@@ -14,21 +14,39 @@ public class UserController : ControllerBase
         _dapper = new DataContextDapper(config);
     }
 
-    [HttpGet("TestConnection")]
+    [HttpGet("GetUsers")]
 
-    public DateTime TestConnection()
-    {   
-        return _dapper.LoadDataSingle<DateTime>("SELECT GETDATE()");
-    }
-
-    [HttpGet("GetUsers/{testValue}")] // it will define the http get method for the route
-    public string[] GetUsers(string testValue)
+    public IEnumerable<User> GetUsers()
     {
-        string[] responseArray = new string[] {
-            "test1",
-            "test2",
-            testValue
-        };
-        return responseArray;
+        string sql = @"
+            SELECT  [UserId]
+                , [FirstName]
+                , [LastName]
+                , [Email]
+                , [Gender]
+                , [Active]
+            FROM  TutorialAppSchema.Users;";
+
+        IEnumerable<User> users = _dapper.LoadData<User>(sql);
+        return users;
     }
-}
+
+    [HttpGet("GetSingleUser/{userId}")] // it will define the http get method for the route
+    public User GetSingleUsers(int userId)
+    {
+        
+        string sql = @"
+            SELECT  [UserId]
+                , [FirstName]
+                , [LastName]
+                , [Email]
+                , [Gender]
+                , [Active]  
+            FROM  TutorialAppSchema.Users
+                WHERE UserId = " + userId.ToString();
+
+        User user = _dapper.LoadDataSingle<User>(sql);
+        return user; 
+    }
+
+    }
