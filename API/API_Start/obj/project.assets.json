@@ -2882,11 +2882,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\DotNet\\dotnet-course-code\\API Basics\\API_Start\\API_Start.csproj",
+      "projectUniqueName": "E:\\DotNet\\dotnet-course-code\\API\\API_Start\\API_Start.csproj",
       "projectName": "API_Start",
-      "projectPath": "E:\\DotNet\\dotnet-course-code\\API Basics\\API_Start\\API_Start.csproj",
+      "projectPath": "E:\\DotNet\\dotnet-course-code\\API\\API_Start\\API_Start.csproj",
       "packagesPath": "C:\\Users\\Shadab Khan\\.nuget\\packages\\",
-      "outputPath": "E:\\DotNet\\dotnet-course-code\\API Basics\\API_Start\\obj\\",
+      "outputPath": "E:\\DotNet\\dotnet-course-code\\API\\API_Start\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Shadab Khan\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YJVNC1rWWoA=",
+  "dgSpecHash": "o+h0DmLcmN8=",
   "success": true,
-  "projectFilePath": "E:\\DotNet\\dotnet-course-code\\API Basics\\API_Start\\API_Start.csproj",
+  "projectFilePath": "E:\\DotNet\\dotnet-course-code\\API\\API_Start\\API_Start.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Shadab Khan\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Shadab Khan\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
