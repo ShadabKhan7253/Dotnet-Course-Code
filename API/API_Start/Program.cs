@@ -2,6 +2,8 @@
 // to run. server will be listening to a request and will reponse to a request when it will recieve
 
 
+using API_Start.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers(); // it will endpoint to the controllers 
@@ -33,6 +35,8 @@ builder.Services.AddCors((options) =>
             });
     });
 
+// t will help to use the method of IUserRepository inside the controller
+builder.Services.AddScoped<IUserRepository,UserRepository>();
 
 // builder actual build the application 
 var app = builder.Build();
