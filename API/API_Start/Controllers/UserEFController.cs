@@ -176,7 +176,7 @@ public class UserEFController : ControllerBase
         //     .Where(u => u.UserId == userId)
         //     .FirstOrDefault();
 
-        UserSalary? userToDelete = _userRepository.GetSingleUserSalary(userId)
+        UserSalary? userToDelete = _userRepository.GetSingleUserSalary(userId);
 
 
         if (userToDelete != null)
