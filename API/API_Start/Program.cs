@@ -2,7 +2,10 @@
 // to run. server will be listening to a request and will reponse to a request when it will recieve
 
 
+using System.Text;
 using API_Start.Data;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -38,6 +41,28 @@ builder.Services.AddCors((options) =>
 // t will help to use the method of IUserRepository inside the controller
 builder.Services.AddScoped<IUserRepository,UserRepository>();
 
+string? tokenKeyString = builder.Configuration.GetSection("AppSettings:TokenKey").Value;
+
+SymmetricSecurityKey tokenKey = new SymmetricSecurityKey(
+        Encoding.UTF8.GetBytes(
+            tokenKeyString != null ? tokenKeyString : ""
+        )
+    );
+
+TokenValidationParameters tokenValidationParameters = new TokenValidationParameters()
+{
+    IssuerSigningKey = tokenKey,
+    ValidateIssuerSigningKey = true,
+    ValidateIssuer = false,
+    ValidateAudience = false
+};
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = tokenValidationParameters;
+    });
+
 // builder actual build the application 
 var app = builder.Build();
 
@@ -54,7 +79,9 @@ else
     app.UseHttpsRedirection(); // in the production mode it will check the route for
 }
 
+app.UseAuthentication();
 
+app.UseAuthorization();
 
 app.MapControllers(); // it will have access to all the controller in our application and it will able to set the router for us 
 

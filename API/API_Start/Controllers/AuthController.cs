@@ -5,6 +5,7 @@ using System.Security.Cryptography;
 using System.Text;
 using API_Start.Data;
 using API_Start.Dtos;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
@@ -12,6 +13,9 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace API_Start.Controllers
 {
+    [Authorize]
+    [ApiController]
+    [Route("[controller]")]
     public class AuthController : ControllerBase
     {
         private readonly  IConfiguration _config;
@@ -22,6 +26,7 @@ namespace API_Start.Controllers
             _config = config;
         }
 
+        [AllowAnonymous]
         [HttpPost("Register")]
         public IActionResult Register(UserForRegistrationDto userForRegistration)
         {
@@ -90,6 +95,7 @@ namespace API_Start.Controllers
             throw new Exception("Password do not match!");
         }
 
+        [AllowAnonymous]
         [HttpPost("Login")]
         public IActionResult Login(UserForLoginDto userForLogin)
         {
@@ -121,6 +127,18 @@ namespace API_Start.Controllers
             return Ok(new Dictionary<string, string> {
                 {"token", CreateToken(userId)}
             });
+        }
+
+        [HttpGet("RefreshToken")]
+        public string RefreshToken()
+        {
+            string userIdSql = @"
+                SELECT UserId FROM TutorialAppSchema.Users WHERE UserId = '" +
+                User.FindFirst("userId")?.Value + "'";
+
+            int userId = _dapper.LoadDataSingle<int>(userIdSql);
+
+            return CreateToken(userId);
         }
 
         private byte[] GetPasswordHash(string password, byte[] passwordSalt)

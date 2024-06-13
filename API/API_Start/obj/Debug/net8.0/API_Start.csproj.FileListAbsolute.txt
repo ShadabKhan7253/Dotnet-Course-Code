@@ -150,3 +150,4 @@ E:\DotNet\dotnet-course-code\API\API_Start\obj\Debug\net8.0\scopedcss\bundle\API
 E:\DotNet\dotnet-course-code\API\API_Start\obj\Debug\net8.0\API_Start.csproj.Up2Date
 E:\DotNet\dotnet-course-code\API\API_Start\obj\Debug\net8.0\API_Start.genruntimeconfig.cache
 E:\DotNet\dotnet-course-code\API\API_Start\obj\Debug\net8.0\ref\API_Start.dll
+E:\DotNet\dotnet-course-code\API\API_Start\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
