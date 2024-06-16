@@ -58,5 +58,40 @@ namespace API_Start.Data
             return rowsAffected > 0;
         }
 
+        public bool ExecuteSqlWithParameters(string sql, DynamicParameters parameters)
+        {
+            IDbConnection dbConnection = new SqlConnection(_config.GetConnectionString("DefaultConnection"));
+            return dbConnection.Execute(sql, parameters) > 0;
+            // SqlCommand commandWithParams = new SqlCommand(sql);
+
+            // foreach(SqlParameter parameter in parameters)
+            // {
+            //     commandWithParams.Parameters.Add(parameter);
+            // }
+
+            // SqlConnection dbConnection = new SqlConnection(_config.GetConnectionString("DefaultConnection"));
+            // dbConnection.Open();
+
+            // commandWithParams.Connection = dbConnection;
+
+            // int rowsAffected = commandWithParams.ExecuteNonQuery();
+
+            // dbConnection.Close();
+
+            // return rowsAffected > 0;
+        }
+
+        public IEnumerable<T> LoadDataWithParameters<T>(string sql, DynamicParameters parameters)
+        {
+            IDbConnection dbConnection = new SqlConnection(_config.GetConnectionString("DefaultConnection"));
+            return dbConnection.Query<T>(sql, parameters);
+        }
+
+        public T LoadDataSingleWithParameters<T>(string sql, DynamicParameters parameters)
+        {
+            IDbConnection dbConnection = new SqlConnection(_config.GetConnectionString("DefaultConnection"));
+            return dbConnection.QuerySingle<T>(sql, parameters);
+        }
+
     }
 }
