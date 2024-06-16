@@ -1,5 +1,6 @@
 using System.Data;
 using API_Start.Data;
+using API_Start.Helpers;
 using API_Start.Models;
 using Dapper;
 using Microsoft.AspNetCore.Mvc;
@@ -10,10 +11,12 @@ namespace DotnetAPI.Controllers;
 [Route("[controller]")]
 public class UserCompleteController : ControllerBase
 {
-    DataContextDapper _dapper;
+    private readonly DataContextDapper _dapper;
+    private readonly ReusableSql _reusableSql;
     public UserCompleteController(IConfiguration config)
     {
-        _dapper = new DataContextDapper(config);
+         _dapper = new DataContextDapper(config);
+        _reusableSql = new ReusableSql(config);;
     }
 
     [HttpGet("GetUsers/{userId}/{isActive}")]
@@ -53,49 +56,49 @@ public class UserCompleteController : ControllerBase
     [HttpPut("UpsertUser")]
     public IActionResult UpsertUser(UserComplete user)
     {
-        // string sql = @"EXEC TutorialAppSchema.spUser_Upsert
-        //     @FirstName = '" + user.FirstName + 
-        //     "', @LastName = '" + user.LastName +
-        //     "', @Email = '" + user.Email + 
-        //     "', @Gender = '" + user.Gender + 
-        //     "', @Active = '" + user.Active + 
-        //     "', @JobTitle = '" + user.JobTitle + 
-        //     "', @Department = '" + user.Department + 
-        //     "', @Salary = '" + user.Salary + 
-        //     "', @UserId = " + user.UserId;
+        // // string sql = @"EXEC TutorialAppSchema.spUser_Upsert
+        // //     @FirstName = '" + user.FirstName + 
+        // //     "', @LastName = '" + user.LastName +
+        // //     "', @Email = '" + user.Email + 
+        // //     "', @Gender = '" + user.Gender + 
+        // //     "', @Active = '" + user.Active + 
+        // //     "', @JobTitle = '" + user.JobTitle + 
+        // //     "', @Department = '" + user.Department + 
+        // //     "', @Salary = '" + user.Salary + 
+        // //     "', @UserId = " + user.UserId;
 
 
-        // if (_dapper.ExecuteSql(sql))
-        // {
-        //     return Ok();
-        // } 
+        // // if (_dapper.ExecuteSql(sql))
+        // // {
+        // //     return Ok();
+        // // } 
 
-        // throw new Exception("Failed to Update User");
+        // // throw new Exception("Failed to Update User");
 
-         string sql = @"EXEC TutorialAppSchema.spUser_Upsert
-            @FirstName = @FirstNameParameter, 
-            @LastName = @LastNameParameter, 
-            @Email = @EmailParameter, 
-            @Gender = @GenderParameter, 
-            @Active = @ActiveParameter, 
-            @JobTitle = @JobTitleParameter, 
-            @Department = @DepartmentParameter, 
-            @Salary = @SalaryParameter, 
-            @UserId = @UserIdParameter";
+        //  string sql = @"EXEC TutorialAppSchema.spUser_Upsert
+        //     @FirstName = @FirstNameParameter, 
+        //     @LastName = @LastNameParameter, 
+        //     @Email = @EmailParameter, 
+        //     @Gender = @GenderParameter, 
+        //     @Active = @ActiveParameter, 
+        //     @JobTitle = @JobTitleParameter, 
+        //     @Department = @DepartmentParameter, 
+        //     @Salary = @SalaryParameter, 
+        //     @UserId = @UserIdParameter";
 
-        DynamicParameters sqlParameters = new DynamicParameters();
+        // DynamicParameters sqlParameters = new DynamicParameters();
 
-        sqlParameters.Add("@FirstNameParameter", user.FirstName, DbType.String);
-        sqlParameters.Add("@LastNameParameter", user.LastName, DbType.String);
-        sqlParameters.Add("@EmailParameter", user.Email, DbType.String);
-        sqlParameters.Add("@GenderParameter", user.Gender, DbType.String);
-        sqlParameters.Add("@ActiveParameter", user.Active, DbType.Boolean);
-        sqlParameters.Add("@JobTitleParameter", user.JobTitle, DbType.String);
-        sqlParameters.Add("@DepartmentParameter", user.Department, DbType.String);
-        sqlParameters.Add("@SalaryParameter", user.Salary, DbType.Decimal);
-        sqlParameters.Add("@UserIdParameter", user.UserId, DbType.Int32);
+        // sqlParameters.Add("@FirstNameParameter", user.FirstName, DbType.String);
+        // sqlParameters.Add("@LastNameParameter", user.LastName, DbType.String);
+        // sqlParameters.Add("@EmailParameter", user.Email, DbType.String);
+        // sqlParameters.Add("@GenderParameter", user.Gender, DbType.String);
+        // sqlParameters.Add("@ActiveParameter", user.Active, DbType.Boolean);
+        // sqlParameters.Add("@JobTitleParameter", user.JobTitle, DbType.String);
+        // sqlParameters.Add("@DepartmentParameter", user.Department, DbType.String);
+        // sqlParameters.Add("@SalaryParameter", user.Salary, DbType.Decimal);
+        // sqlParameters.Add("@UserIdParameter", user.UserId, DbType.Int32);
 
-        if (_dapper.ExecuteSqlWithParameters(sql, sqlParameters))
+        if (_reusableSql.UpsertUser(user))
         {
             return Ok();
         } 
